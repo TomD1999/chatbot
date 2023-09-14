@@ -8,7 +8,7 @@ poetry install
 ```
 
 env variables:
-Copy the file .env.example as .env (or run `cp .env.example .env`) then replace the value of `CHAT_GPT_KEY` with your token
+Copy the file .env.example as .env (or run `cp .env.example .env`) then replace the value of `CHAT_GPT_KEY` in .env with your token
 
 running the app:
 ```
