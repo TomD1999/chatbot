@@ -1,7 +1,6 @@
 import os
 import openai
 from dotenv import load_dotenv
-import gradio as gr
 
 
 load_dotenv()
@@ -23,7 +22,6 @@ def chatbot(input):
             reply = chat.choices[0].message.content
             messages.append({"role": "assistant", "content": reply})
         except openai.error.RateLimitError:
-            print("rate limit reached")
             return "rate limit reached"
 
         return reply
@@ -33,10 +31,4 @@ messages = [
     {"role": "system", "content": "You are a helpful and kind AI Assistant."},
 ]
 
-
-inputs = gr.inputs.Textbox(lines=7, label="Chat with AI")
-outputs = gr.outputs.Textbox(label="Reply")
-
-gr.Interface(fn=chatbot, inputs=inputs, outputs=outputs, title="AI Chatbot",
-             description="Ask anything you want",
-             theme="compact").launch(share=True)
+print(chatbot("test"))
