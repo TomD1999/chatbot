@@ -15,4 +15,4 @@ running the app:
 poetry run test.py
 ```
 
-should be able to access from:  http://127.0.0.1:7860
+due to security concerns, had to remove the frontend aspect of the app. Will try to fix it when I get the chance. At the moment it just asks one question then returns the response or a rate limit error

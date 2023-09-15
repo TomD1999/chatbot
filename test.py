@@ -31,4 +31,4 @@ messages = [
     {"role": "system", "content": "You are a helpful and kind AI Assistant."},
 ]
 
-print(chatbot("test"))
+print(chatbot("what can you help me with?"))
