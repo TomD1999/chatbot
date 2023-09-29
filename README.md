@@ -16,3 +16,11 @@ poetry run chatbot/gpt_chatbot.py
 ```
 
 due to security concerns, had to remove the frontend aspect of the app. Will try to fix it when I get the chance. At the moment it just asks one question then returns the response (mostly a rate limit error)
+
+training llm:
+```
+poetry run train_data.py
+```
+
+Lots of these require gpt credits that I don't have, but gives an example of what can be done
+
