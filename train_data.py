@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = 'key'
 
 
 def construct_index(directory_path):
