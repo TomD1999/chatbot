@@ -15,6 +15,9 @@ poetry run python3 google_chatbot/chatbot.py
 ```
 need to have gcloud set to a project with vertexAI enabled
 
+DATA: 
+example data to be put into the `google_chatbot/examples.py` file in the format there (I didn't want to commit that for security reasons)
+
 OLD VERSION BELOW (CHATGPT VERISION):
 
 env variables:
