@@ -1,4 +1,6 @@
 .env
 *.pdf
+*.wav
+*.mp3
 flagged
 __pycache__
