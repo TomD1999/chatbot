@@ -20,10 +20,6 @@ class SpeechGenerator:
             
         input_text = texttospeech.SynthesisInput(text=words)
 
-        # Note: the voice can also be specified by name.
-        # Names of voices can be retrieved with client.list_voices().
-
-
 
         response = self.client.synthesize_speech(
             request={"input": input_text, "voice": self.voice, "audio_config": self.audio_config}
@@ -33,8 +29,8 @@ class SpeechGenerator:
         with open("output.wav", "wb") as out:
             out.write(response.audio_content)
         
-        song = AudioSegment.from_wav("output.wav")
-        play(song)
+        audio = AudioSegment.from_wav("output.wav")
+        play(audio)
 
 
 
